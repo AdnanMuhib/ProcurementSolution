@@ -40,6 +40,7 @@
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.NewEmpPage = new System.Windows.Forms.TabPage();
             this.AllEmpPage = new System.Windows.Forms.TabPage();
+            this.IssuedAccPage = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.AccessoriesPage.SuspendLayout();
             this.EmployeesPage.SuspendLayout();
@@ -56,7 +57,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(625, 493);
+            this.tabControl1.Size = new System.Drawing.Size(665, 493);
             this.tabControl1.TabIndex = 0;
             // 
             // AccessoriesPage
@@ -65,7 +66,7 @@
             this.AccessoriesPage.Location = new System.Drawing.Point(4, 27);
             this.AccessoriesPage.Name = "AccessoriesPage";
             this.AccessoriesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AccessoriesPage.Size = new System.Drawing.Size(617, 462);
+            this.AccessoriesPage.Size = new System.Drawing.Size(657, 462);
             this.AccessoriesPage.TabIndex = 0;
             this.AccessoriesPage.Text = "Accessories";
             this.AccessoriesPage.UseVisualStyleBackColor = true;
@@ -85,13 +86,14 @@
             // 
             this.tabControl2.Controls.Add(this.IssueAccPage);
             this.tabControl2.Controls.Add(this.AvailableAccPage);
+            this.tabControl2.Controls.Add(this.IssuedAccPage);
             this.tabControl2.Controls.Add(this.AccAddStockPage);
             this.tabControl2.Controls.Add(this.AccCategoryPage);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(611, 456);
+            this.tabControl2.Size = new System.Drawing.Size(651, 456);
             this.tabControl2.TabIndex = 0;
             // 
             // IssueAccPage
@@ -99,7 +101,7 @@
             this.IssueAccPage.Location = new System.Drawing.Point(4, 27);
             this.IssueAccPage.Name = "IssueAccPage";
             this.IssueAccPage.Padding = new System.Windows.Forms.Padding(3);
-            this.IssueAccPage.Size = new System.Drawing.Size(603, 425);
+            this.IssueAccPage.Size = new System.Drawing.Size(643, 425);
             this.IssueAccPage.TabIndex = 0;
             this.IssueAccPage.Text = "Issue Accessory";
             this.IssueAccPage.UseVisualStyleBackColor = true;
@@ -109,16 +111,16 @@
             this.AvailableAccPage.Location = new System.Drawing.Point(4, 27);
             this.AvailableAccPage.Name = "AvailableAccPage";
             this.AvailableAccPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AvailableAccPage.Size = new System.Drawing.Size(579, 384);
+            this.AvailableAccPage.Size = new System.Drawing.Size(643, 425);
             this.AvailableAccPage.TabIndex = 1;
             this.AvailableAccPage.Text = "Available Accessories";
             this.AvailableAccPage.UseVisualStyleBackColor = true;
             // 
             // AccCategoryPage
             // 
-            this.AccCategoryPage.Location = new System.Drawing.Point(4, 33);
+            this.AccCategoryPage.Location = new System.Drawing.Point(4, 27);
             this.AccCategoryPage.Name = "AccCategoryPage";
-            this.AccCategoryPage.Size = new System.Drawing.Size(475, 378);
+            this.AccCategoryPage.Size = new System.Drawing.Size(643, 425);
             this.AccCategoryPage.TabIndex = 2;
             this.AccCategoryPage.Text = "Accessory Category";
             this.AccCategoryPage.UseVisualStyleBackColor = true;
@@ -128,7 +130,7 @@
             this.AccAddStockPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.AccAddStockPage.Location = new System.Drawing.Point(4, 27);
             this.AccAddStockPage.Name = "AccAddStockPage";
-            this.AccAddStockPage.Size = new System.Drawing.Size(579, 384);
+            this.AccAddStockPage.Size = new System.Drawing.Size(643, 425);
             this.AccAddStockPage.TabIndex = 3;
             this.AccAddStockPage.Text = "New Accessory Stock";
             this.AccAddStockPage.UseVisualStyleBackColor = true;
@@ -164,12 +166,21 @@
             this.AllEmpPage.Text = "All Employees";
             this.AllEmpPage.UseVisualStyleBackColor = true;
             // 
+            // IssuedAccPage
+            // 
+            this.IssuedAccPage.Location = new System.Drawing.Point(4, 27);
+            this.IssuedAccPage.Name = "IssuedAccPage";
+            this.IssuedAccPage.Size = new System.Drawing.Size(643, 425);
+            this.IssuedAccPage.TabIndex = 4;
+            this.IssuedAccPage.Text = "Issued";
+            this.IssuedAccPage.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(625, 493);
+            this.ClientSize = new System.Drawing.Size(665, 493);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -200,6 +211,7 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage NewEmpPage;
         private System.Windows.Forms.TabPage AllEmpPage;
+        private System.Windows.Forms.TabPage IssuedAccPage;
     }
 }
 
