@@ -6,3 +6,4 @@ c:\users\antivirus\documents\visual studio 2015\Projects\Library\ProcurementSolu
 c:\users\antivirus\documents\visual studio 2015\Projects\Library\ProcurementSolution\ProcurementSolution\obj\Debug\ProcurementSolution.csproj.GenerateResource.Cache
 c:\users\antivirus\documents\visual studio 2015\Projects\Library\ProcurementSolution\ProcurementSolution\obj\Debug\ProcurementSolution.exe
 c:\users\antivirus\documents\visual studio 2015\Projects\Library\ProcurementSolution\ProcurementSolution\obj\Debug\ProcurementSolution.pdb
+c:\users\antivirus\documents\visual studio 2015\Projects\Library\ProcurementSolution\ProcurementSolution\obj\Debug\ProcurementSolution.Main.resources
