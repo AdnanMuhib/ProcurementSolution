@@ -33,7 +33,6 @@
             this.AccessoriesPage = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.IssueAccPage = new System.Windows.Forms.TabPage();
-            this.AvailableAccPage = new System.Windows.Forms.TabPage();
             this.IssuedAccPage = new System.Windows.Forms.TabPage();
             this.AccAddStockPage = new System.Windows.Forms.TabPage();
             this.btnAddAccessory = new System.Windows.Forms.Button();
@@ -95,7 +94,6 @@
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.IssueAccPage);
-            this.tabControl2.Controls.Add(this.AvailableAccPage);
             this.tabControl2.Controls.Add(this.IssuedAccPage);
             this.tabControl2.Controls.Add(this.AccAddStockPage);
             this.tabControl2.Controls.Add(this.AccCategoryPage);
@@ -116,16 +114,6 @@
             this.IssueAccPage.Text = "Issue Accessory";
             this.IssueAccPage.UseVisualStyleBackColor = true;
             // 
-            // AvailableAccPage
-            // 
-            this.AvailableAccPage.Location = new System.Drawing.Point(4, 27);
-            this.AvailableAccPage.Name = "AvailableAccPage";
-            this.AvailableAccPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AvailableAccPage.Size = new System.Drawing.Size(643, 425);
-            this.AvailableAccPage.TabIndex = 1;
-            this.AvailableAccPage.Text = "Available Accessories";
-            this.AvailableAccPage.UseVisualStyleBackColor = true;
-            // 
             // IssuedAccPage
             // 
             this.IssuedAccPage.Location = new System.Drawing.Point(4, 27);
@@ -144,7 +132,7 @@
             this.AccAddStockPage.Name = "AccAddStockPage";
             this.AccAddStockPage.Size = new System.Drawing.Size(643, 425);
             this.AccAddStockPage.TabIndex = 3;
-            this.AccAddStockPage.Text = "New Accessory Stock";
+            this.AccAddStockPage.Text = "Accessory Stock";
             this.AccAddStockPage.UseVisualStyleBackColor = true;
             // 
             // btnAddAccessory
@@ -225,7 +213,7 @@
             this.AccCategoryPage.Name = "AccCategoryPage";
             this.AccCategoryPage.Size = new System.Drawing.Size(643, 425);
             this.AccCategoryPage.TabIndex = 2;
-            this.AccCategoryPage.Text = "Accessory Category";
+            this.AccCategoryPage.Text = "Accessory Categories";
             this.AccCategoryPage.UseVisualStyleBackColor = true;
             // 
             // gridCategories
@@ -391,7 +379,6 @@
         private System.Windows.Forms.TabPage EmployeesPage;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage IssueAccPage;
-        private System.Windows.Forms.TabPage AvailableAccPage;
         private System.Windows.Forms.TabPage AccAddStockPage;
         private System.Windows.Forms.TabPage AccCategoryPage;
         private System.Windows.Forms.TabControl tabControl3;
