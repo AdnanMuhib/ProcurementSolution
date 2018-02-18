@@ -17,10 +17,36 @@ namespace ProcurementSolution.Models
         {
             // condition to check if accessory is there
             // then only update the quantity
-            // otherwise add as new product
-            accessories.Add(accessory);
-        }
+            bool alreadyExists = false;
 
+            foreach (var acc in accessories)
+            {
+                if(acc.title.Equals(accessory.title)
+                    && acc.category.Equals(accessory.category))
+                {
+                    acc.quantity = acc.quantity + accessory.quantity;
+                    alreadyExists = true;
+                    break;
+                }
+            }
+            // otherwise add as new product
+            if (!alreadyExists)
+            {
+                accessories.Add(accessory);
+            }
+        }
+        public static void UpdateCategories(Category cat)
+        {
+            // check whether category already exists or not
+            int index = categories.FindIndex(item => item.category_name == cat.category_name);
+            // if not exits then ADD
+            if (index != 0)
+            {
+                categories.Add(cat);
+                return;
+            }
+
+        }
         public static void printAvailableAccessories()
         {
             // Print all accessories

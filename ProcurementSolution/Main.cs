@@ -32,6 +32,20 @@ namespace ProcurementSolution
                 }
                 bs.DataSource = cats;
                 drpAccCategory.DataSource = bs;
+                BindingSource bs1 = new BindingSource();
+                bs1.DataSource = Record.accessories;
+                gridAccessories.DataSource = bs1;
+                gridAccessories.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                gridAccessories.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                gridAccessories.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            // If Cateogries Tab is selected
+            if(tabControl2.SelectedIndex.Equals(4))
+            {
+                BindingSource bs2 = new BindingSource();
+                bs2.DataSource = Record.categories;
+                gridCategories.DataSource = bs2;
+                gridCategories.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             }
         }
 
@@ -44,18 +58,51 @@ namespace ProcurementSolution
             }
             string cat = txtCategoryname.Text;
             Category ct = new Category(cat);
-            ct.AddToList();
+            Record.UpdateCategories(ct);
             txtCategoryname.Text = "";
             BindingSource bs = new BindingSource();
             Record rd = new Record();
             bs.DataSource = Record.categories;
             gridCategories.DataSource = bs;
-            //MessageBox.Show("New Category Added Successfully");
+            gridCategories.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddAccessory_Click(object sender, EventArgs e)
+        {
+            if (txtAccTitle.Text.Equals(""))
+            {
+                MessageBox.Show("Enter Accessory Name");
+                return;
+            }
+            if (drpAccCategory.Text.Equals(""))
+            {
+                MessageBox.Show("No Cateogry Selected");
+                return;
+            }
+            if (numQuantity.Value.Equals(0))
+            {
+                MessageBox.Show("Quantity is 0");
+                return;
+            }
+            string AccessoryName = txtAccTitle.Text;
+            string category = drpAccCategory.Text;
+            int quantity = Int32.Parse(numQuantity.Text);
+            Accessory acc = new Accessory(AccessoryName, quantity, category);
+            Record.UpdateStock(acc);
+            txtAccTitle.Text = "";
+            // Adding to the Data Grid View
+            BindingSource src = new BindingSource();
+            src.DataSource = Record.accessories;
+            gridAccessories.DataSource = src;
+            gridAccessories.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            gridAccessories.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            gridAccessories.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
     }
 }
