@@ -8,10 +8,10 @@ namespace ProcurementSolution.Models
 {
     class Record
     {
-        public static List<Accessory> accessories { get; set; }
-        public static List<IssueAccessory> issued_accessories { get; set; }
-        public static List<Employee> employees { get; set; }
-        public static List<Category> categories { get; set; }
+        public static List<Accessory> accessories = new List<Accessory>();
+        public static List<IssueAccessory> issued_accessories = new List<Models.IssueAccessory>();
+        public static List<Employee> employees = new List<Employee>();
+        public static List<Category> categories = new List<Category>();
 
         public static void UpdateStock(Accessory accessory)
         {

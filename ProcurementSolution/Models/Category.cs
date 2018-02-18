@@ -19,5 +19,10 @@ namespace ProcurementSolution.Models
         {
             this.category_name = category_name;
         }
+
+        public void AddToList()
+        {
+            Record.categories.Add(this);
+        }
     }
 }

@@ -15,7 +15,12 @@ namespace ProcurementSolution.Models
 
         public IssueAccessory()
         {
+            Accessories = new List<Accessory>();
             this.issueDate = DateTime.Now;
+        }
+
+        public void AddAccessory(Accessory acc) {
+            Accessories.Add(acc);
         }
         public void AddRecord()
         {
