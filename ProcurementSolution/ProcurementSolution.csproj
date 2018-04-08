@@ -57,6 +57,11 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IssueAccessory.cs" />
     <Compile Include="Models\Record.cs" />
+    <Compile Include="ProcurementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProcurementDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
@@ -71,6 +76,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ProcurementDataSet.xsc">
+      <DependentUpon>ProcurementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProcurementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProcurementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProcurementDataSet.xss">
+      <DependentUpon>ProcurementDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

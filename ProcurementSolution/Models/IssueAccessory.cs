@@ -17,6 +17,7 @@ namespace ProcurementSolution.Models
         {
             Accessories = new List<Accessory>();
             this.issueDate = DateTime.Now;
+            
         }
 
         public void AddAccessory(Accessory acc) {
