@@ -17,7 +17,10 @@ namespace ProcurementSolution.Models
         {
             Accessories = new List<Accessory>();
             this.issueDate = DateTime.Now;
+<<<<<<< HEAD
             
+=======
+>>>>>>> bed9ff03d18c973b38d4284d83779d4d128b727a
         }
 
         public void AddAccessory(Accessory acc) {
